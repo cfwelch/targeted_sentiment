@@ -20,16 +20,18 @@ sudo apt update; sudo apt install oracle-java8-installer oracle-java8-set-defaul
 ```
 
 ### How to run the pipeline
-1. Run splits.py to generate splits for the data. You can change the number of splits in the file -- default is 100.
-2. Run crf_example.py to generate taggers. This will read in the CRFNERADVISE-BIOYZ file as well as the splits file and generate an individual tagger for each split.
-3. Run sentiment_class.py which will read in the EECS_annotated_samples file and use the generated splits to create a different sentiment classifier for each split.
-4. Run NLU.py to use the whole pipeline for each split. This will push each utterance through the splits tagger and then use the output as input for the sentiment classifier for that split.
+1. Run make_crfbioyz.py to generate the tokenized file to train the CRFs.
+2. Run splits.py to generate splits for the data. You can change the number of splits in the file -- default is 100.
+3. Run crf_example.py to generate taggers. This will read in the CRFNERADVISE-BIOYZ file as well as the splits file and generate an individual tagger for each split.
+4. Run sentiment_class.py which will read in the EECS_annotated_samples file and use the generated splits to create a different sentiment classifier for each split.
+5. Run NLU.py to use the whole pipeline for each split. This will push each utterance through the splits tagger and then use the output as input for the sentiment classifier for that split.
 
 ### Where files are output
-1. Output for splits.py is stored in 'splits'.
-2. Output for crf_example.py is stored in /taggers - pscores, rscores, and fscores
-3. Output for sentiment_class.py is stored in /classifiers - sentiment_scores
-4. Output for NLU.py is stored in NLU_scores
+1. Output for make_crfbioyz.py is stored in 'CRFNERADVISE-BIOYZ'.
+2. Output for splits.py is stored in 'splits'.
+3. Output for crf_example.py is stored in /taggers - pscores, rscores, and fscores.
+4. Output for sentiment_class.py is stored in /classifiers - sentiment_scores.
+5. Output for NLU.py is stored in NLU_scores.
 
 ### Comments about already installed dependencies
 These steps are required to set up dependencies.
