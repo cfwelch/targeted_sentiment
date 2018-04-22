@@ -78,7 +78,7 @@ def main():
 	print("Q: " + str(tok_q) + " - " + str(tok_q*1.0/3));
 
 	#store sentiment labels
-	fo = open("EECS_annotated_samples", "r");
+	fo = open("EECS_annotated_samples_anonymized", "r");
 	lines = fo.readlines();
 	fo.close();
 	mode = False;

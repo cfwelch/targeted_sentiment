@@ -1,6 +1,6 @@
 
 def main():
-	fi = open("../data/extract_samples/EECS_annotated_samples");
+	fi = open("EECS_annotated_samples_anonymized");
 	fo = open("sentimentAnnotations", "w");
 	lines = fi.readlines();
 	fi.close();

@@ -1,6 +1,6 @@
 import dicts
 
-f = open("../data/extract_samples/EECS_annotated_samples");
+f = open("EECS_annotated_samples_anonymized");
 l = f.readlines();
 f.close();
 s = set();

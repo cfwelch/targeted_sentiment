@@ -17,7 +17,7 @@ import NLU
 import leastSquares
 
 def main():
-	fo = open("../data/extract_samples/EECS_annotated_samples", "r");
+	fo = open("EECS_annotated_samples_anonymized", "r");
 	lines = fo.readlines();
 	utterances = NLU.getUtterances(lines);
 	mode = False;

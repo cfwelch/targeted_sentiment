@@ -173,7 +173,7 @@ def getUtterances(lines):
 	return full;
 
 def getALines():
-	fo = open("EECS_annotated_samples", "r");#_lies_links
+	fo = open("EECS_annotated_samples_anonymized", "r");#_lies_links
 	lines = fo.readlines();
 	fo.close();
 	return lines;

@@ -2,7 +2,7 @@ import sys
 
 def main():
 	# initalize program
-	fo = open("EECS_annotated_samples", "r");
+	fo = open("EECS_annotated_samples_anonymized", "r");
 	lines = fo.readlines();
 	mode = False;
 	typeMode = 'o';

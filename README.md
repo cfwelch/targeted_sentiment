@@ -1,19 +1,5 @@
 # Targeted Sentiment Analysis
 
-## Publication
-
-If you use this code please cite:
-
-```
-@inproceedings{Welch16Targeted,
-    author = {Welch, C. and R. Mihalcea},
-    title = {Targeted Sentiment to Understand Student Comments},
-    booktitle = {Proceedings of the International Conference on Computational Linguistics (COLING 2016)},
-    address = {Japan},
-    year = {2016}
-}
-```
-
 ## Description
 We have gathered a new data set from students at the University of Michigan and developed a new method for targeted sentiment. We perform both entity extraction and sentiment analysis over extracted entities showing improvements over previous work on a similar task.
 
@@ -46,7 +32,7 @@ sudo apt update; sudo apt install oracle-java8-installer oracle-java8-set-defaul
 4. Output for NLU.py is stored in NLU_scores
 
 ### Comments about already installed dependencies
-These steps are already done and only describe how resources were modified or how existing dependencies were installed.
+These steps are required to set up dependencies.
 
 To install pywrapper we did:
 `git clone https://github.com/brendano/stanford_corenlp_pywrapper dependencies/`
@@ -54,7 +40,7 @@ To install pywrapper we did:
 
 Extracted http://nlp.stanford.edu/software/stanford-corenlp-full-2015-04-20.zip into dependencies folder.
 
-The dataset can be downloaded from: http://web.eecs.umich.edu/~mihalcea/downloads/targetedSentiment.2017.tar.gz
+The dataset can be downloaded from http://web.eecs.umich.edu/~mihalcea/downloads/targetedSentiment.2017.tar.gz and should be placed in this folder.
 
 These lexicons are in the data folder:
 1. [Bing Liu's lexicon](https://www.cs.uic.edu/~liub/FBS/opinion-lexicon-English.rar)
@@ -64,3 +50,17 @@ Renamed Bing Liu's lexicon files into `neg_words` and `pos_words`.
 Removed 'm' characters from line 5549 and 5550 in MPQA file.
 
 Created directories `taggers` and `classifiers`.
+
+## Publication
+
+If you use this code please cite:
+
+```
+@inproceedings{Welch16Targeted,
+    author = {Welch, C. and R. Mihalcea},
+    title = {Targeted Sentiment to Understand Student Comments},
+    booktitle = {Proceedings of the International Conference on Computational Linguistics (COLING 2016)},
+    address = {Japan},
+    year = {2016}
+}
+```

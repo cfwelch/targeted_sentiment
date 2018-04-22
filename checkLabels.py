@@ -45,7 +45,7 @@ def t2():
 			print(str(l1) + "_" + str(l2));
 
 def t1():
-	f = open("EECS_annotated_samples");
+	f = open("EECS_annotated_samples_anonymized");
 	lines = f.readlines();
 	f.close();
 

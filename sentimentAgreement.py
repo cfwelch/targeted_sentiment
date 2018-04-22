@@ -4,7 +4,7 @@ def main():
 	fi = open("sentimentAnnotations");
 	line1 = fi.readlines();
 	fi.close();
-	fo = open("EECS_annotated_samples");
+	fo = open("EECS_annotated_samples_anonymized");
 	line2 = fo.readlines();
 	fo.close();
 	utt1 = NLU.getUtterances(line1);

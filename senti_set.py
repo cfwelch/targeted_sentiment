@@ -21,7 +21,7 @@ def main():
 		parts = pid[i].split("\t");
 		pset.add(parts[0]);
 		pidmap[parts[1].strip()] = parts[0];
-	fl = open("../data/extract_samples/EECS_annotated_samples");
+	fl = open("EECS_annotated_samples_anonymized");
 	lines = fl.readlines();
 	fl.close();
 	utterances = NLU.getUtterances(lines);
