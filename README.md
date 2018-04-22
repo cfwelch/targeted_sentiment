@@ -1,6 +1,10 @@
 # Targeted Sentiment Analysis
 
 ## Publication
+
+If you use this code please cite:
+
+```
 @inproceedings{Welch16Targeted,
     author = {Welch, C. and R. Mihalcea},
     title = {Targeted Sentiment to Understand Student Comments},
@@ -8,6 +12,7 @@
     address = {Japan},
     year = {2016}
 }
+```
 
 ## Description
 We have gathered a new data set from students at the University of Michigan and developed a new method for targeted sentiment. We perform both entity extraction and sentiment analysis over extracted entities showing improvements over previous work on a similar task.
