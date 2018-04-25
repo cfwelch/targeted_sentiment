@@ -52,13 +52,13 @@ for line in lines:
             #atpos = cur_parsed.index(aparts[1])
             for i in range(0, len(cur_parsed)):
                 if cur_parsed[i] == aparts[1]:
-                    cur_mapped[atpos] = 'A'
+                    cur_mapped[i] = 'A'
         elif aparts[0] == 'department':
             if aparts[1] in cur_parsed:
                 #atpos = cur_parsed.index(aparts[1])
                 for i in range(0, len(cur_parsed)):
                     if cur_parsed[i] == aparts[1]:
-                        cur_mapped[atpos] = 'B'
+                        cur_mapped[i] = 'B'
             else:
                 print('Warning: ' + aparts[1] + ' is not in sentence...')
         elif aparts[0] == 'name':
