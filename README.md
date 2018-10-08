@@ -54,16 +54,16 @@ The Python wrapper we are using for Stanford CoreNLP only works with Python 2.
 2. Output for splits.py is stored in 'splits'.
 3. Output for crf_tagger.py is stored in /taggers - pscores, rscores, and fscores.
 4. Output for sentiment_class.py is stored in /classifiers - sentiment_scores.
-5. Output for nlu.py is stored in nlu_scores.
+5. Output for nlu.py is stored in nlu_scores in an array with the format of total precision and recall, followed by the precision and recall for each entity type.
 
 ### Comments about already installed dependencies
 These steps are required to set up dependencies.
 
-To install pywrapper we did:
+To install pywrapper we ran:
 `git clone https://github.com/brendano/stanford_corenlp_pywrapper dependencies/`
 `ln -s dependencies/stanford_corenlp_pywrapper .`
 
-Extracted http://nlp.stanford.edu/software/stanford-corenlp-full-2015-04-20.zip into dependencies folder.
+Extracted Stanford CoreNLP into dependencies folder. The code has been tested with versions 2015-04-20 and 2018-02-27.
 
 The dataset can be downloaded from http://web.eecs.umich.edu/~mihalcea/downloads/targetedSentiment.2017.tar.gz and should be placed in this folder.
 
